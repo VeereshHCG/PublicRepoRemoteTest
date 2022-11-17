@@ -1,0 +1,64 @@
+{
+  "id": "displayAllExpenses",
+  "endPoints": [
+    {
+      "name" : "getExpensesEntries",
+      "baseUrlType" : "WORKDAY-EXPENSE",
+      "url" : "/entries",
+      "authType" : "sso",
+      "isCollection" : "true"
+    }
+  ],
+  "presentation": {
+    "headerSize": "VPS_DEFAULT",
+    "title": {
+      "type": "title",
+      "label": "Display All Expenses"
+    },
+    "body": {
+      "type": "section",
+      "horizontal": false,
+      "children": [
+        {
+          "type": "text",
+          "id": "hello",
+          "label": "Hello World!",
+          "value": "Display All Expenses"
+        },
+        {
+          "type": "button",
+          "id": "btnGoViewExpense",
+          "action": "LINK",
+          "commandHttpMethod": "GET",
+          "label": "View an Expense",
+          "taskReference": {
+            "type": "taskReference",
+            "taskId": "displayAnExpense"
+        } }
+
+      ]
+    },
+
+    "footer": {
+      "type": "footer",
+      "children": [
+        {
+          "type" : "button",
+          "id" : "btnGoHome",
+          "action" : "LINK",
+          "commandHttpMethod" : "GET",
+          "label" : "Return to Home Page",
+          "taskReference":{
+            "type" : "taskReference",
+            "taskId":"root"
+          }
+        },
+        {
+          "type": "richText",
+          "enabled": "false",
+          "value": "Powered By Workday Extend"
+        }
+      ]
+    }
+  }
+}

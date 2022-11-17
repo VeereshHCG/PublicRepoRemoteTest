@@ -1,0 +1,32 @@
+{
+  "appProperties": [ ],
+  "DataProvider" :[
+    {
+      "key": "WORKDAY-EXPENSE",
+      "value": "https://api.workday.com/expense/v1" }
+  ],
+  "tasks": [
+    {
+      "id": "root",
+      "routingPattern": "/",
+      "page": {
+        "id": "home"
+      }
+    },
+    {
+      "id": "displayAllExpenses",
+      "routingPattern": "displayAllExpenses",
+      "page": {
+        "id": "displayAllExpenses"
+      }
+    },
+    {
+      "id": "displayAnExpense",
+      "routingPattern": "displayAnExpense",
+      "page": {
+        "id": "displayAnExpense"
+      }
+    }
+  ],
+  "applicationId": "firstApp_xqscgx"
+}

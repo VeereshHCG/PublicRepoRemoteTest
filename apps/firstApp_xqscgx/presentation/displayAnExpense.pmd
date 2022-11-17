@@ -1,0 +1,50 @@
+{
+  "id": "displayAnExpense",
+  "endPoints": [
+  ],
+  "presentation": {
+    "headerSize": "VPS_DEFAULT",
+    "title": {
+      "type": "title",
+      "label": "View an Expense"
+    },
+    "body": {
+      "type": "section",
+      "horizontal": false,
+      "children": [
+        {
+          "type": "button",
+          "id": "btnGoToExpense",
+          "action" : "LINK",
+          "commandHttpMethod" : "GET",
+          "label" : "Dispaly an Expenses",
+          "taskReference":{
+            "type" : "taskReference",
+            "taskId": "displayAnExpense"
+          }
+        }
+      ]
+    },
+    "footer": {
+      "type": "footer",
+      "children": [
+        {
+          "type" : "button",
+          "id" : "btnGoHome",
+          "action" : "LINK",
+          "commandHttpMethod" : "GET",
+          "label" : "Return to Home Page",
+          "taskReference":{
+            "type" : "taskReference",
+            "taskId":"root"
+          }
+        },
+        {
+          "type": "richText",
+          "enabled": "false",
+          "value": "Powered By Workday Extend"
+        }
+      ]
+    }
+  }
+}

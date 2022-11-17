@@ -1,0 +1,21 @@
+{
+  "id": "firstApp_xqscgx",
+  "languages": [
+    {
+      "code": "en-US",
+      "description": "English"
+    }
+  ],
+  "siteAuth": {
+    "authTypes": [
+      {
+        "id": "sso",
+        "scheme": "SSO"
+      }
+    ]
+  },
+  "siteId": "firstApp_xqscgx",
+  "cdnEnabled": true,
+  "siteProperties": [ ],
+  "applicationId": "firstApp_xqscgx"
+}

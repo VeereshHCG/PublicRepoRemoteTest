@@ -1,0 +1,42 @@
+{
+  "id": "home",
+  "presentation": {
+    "title": {
+      "type": "title",
+      "label": "Manage Workday  Expenses"
+    },
+    "body": {
+      "type": "section",
+      "children": [
+        {
+          "type": "image",
+          "id": "hello",
+          "label": "Hello World!",
+          "imageUri": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Workday_Headquarters.jpg/1200px-Workday_Headquarters.jpg"
+        },
+        {
+          "type": "button",
+          "id": "btnDispExp",
+          "action": "LINK",
+        "commandHttpMethod" : "GET",
+          "label" : "Display All Expenses",
+          "taskReference" : {
+            "type" : "taskReference",
+            "taskId" : "displayAllExpenses"
+          }
+
+        }
+      ]
+    },
+    "footer": {
+      "type": "footer",
+      "children": [
+        {
+          "type": "richText",
+          "enabled": "false",
+          "value": "Powered By Workday Extend"
+        }
+      ]
+    }
+  }
+}
